@@ -1,0 +1,175 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Sections */
+
+.colored-section {
+  background-color: #ff4c68;
+  color: white;
+}
+
+.white-section {
+  background-color: white;
+}
+
+ /* Headers */
+.big-header {
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-header {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+
+/* Navigation bar */
+.navbar {
+  padding-bottom: 4.5rem;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+
+/* Title Section */
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+.title-image {
+  right: 23%;
+  width: 20rem;
+  transform: rotate(25deg);
+  position: absolute;
+  /* change position to absolute so that the image wont take up its own space and the Features section can overlap on top of it */
+}
+
+.btn-dark:hover {
+  background-color: white;
+  border-style: none;
+  color: black;
+}
+
+@media (max-width:991px) {
+  .title-image {
+    position: static;
+    /* change position back to static so that the image will take up space again instead of being totally covered by the Features section on tablet and mobile screen */
+    transform: rotate(0)
+  }
+
+  #title {
+    text-align: center;
+  }
+}
+
+
+/* Features Section */
+#features {
+  position: relative;
+  z-index: 1;
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+.feature-subheader {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.feature-icons {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.feature-icons:hover {
+  color: #ff4c68;
+}
+
+/* Testimonials Section */
+#testimonials {
+  background-color: #ef8172;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 1rem;
+}
+
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 1.5rem 1.5rem 3rem;
+}
+
+/* Pricing Section */
+
+#pricing {
+  padding: 100px;
+}
+
+.price-subheader {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.card {
+  height:100%;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* Footer Section */
+
+.footer-icons {
+  margin: 0 0.5rem 1.5rem;
+}
